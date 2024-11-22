@@ -1,0 +1,99 @@
+/* Estilo general para el cuerpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor del formulario */
+.container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Título del formulario */
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Estilo para cada grupo de formulario */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 16px;
+    color: #555;
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Estilo de los campos de entrada */
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin-top: 5px;
+    transition: border-color 0.3s ease;
+    background-color: #f9f9f9;
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+    background-color: #eaf5e0;
+}
+
+/* Estilo del botón */
+button {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(1);
+}
+
+/* Agregar espacio entre los elementos */
+form > .form-group > input {
+    margin-top: 8px;
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
